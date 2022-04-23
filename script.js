@@ -43,6 +43,6 @@ window.onload = () => {
     }
    
 }
-setInterval(ajax, 100);
+setInterval(ajax, 10);
 
 }
