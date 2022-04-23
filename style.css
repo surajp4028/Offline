@@ -47,6 +47,7 @@
 }
 .status-box .guide{
     color: rgb(20, 20, 185);
+    transition: all 0.3s ease-out;
 }
 .status-box .guide.active{
     color: rgb(87, 86, 86);
