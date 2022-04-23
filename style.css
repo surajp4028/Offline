@@ -32,6 +32,17 @@
 .status-box img{
     width: 100px;
     margin-bottom: 25px;
+    display: none;
+}
+.status-box .wifi.active{
+    width: 100px;
+    margin-bottom: 25px;
+    display: block;
+}
+.status-box .offline.active{
+    width: 100px;
+    margin-bottom: 25px;
+    display: block;
 }
 .status-box h3{
     font-size: 20px;
@@ -47,7 +58,6 @@
 }
 .status-box .guide{
     color: rgb(20, 20, 185);
-    transition: all 0.3s ease-out;
 }
 .status-box .guide.active{
     color: rgb(87, 86, 86);
