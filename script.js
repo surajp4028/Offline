@@ -10,9 +10,9 @@ window.onload = () => {
         var xhr = new XMLHttpRequest();
         xhr.open("GET","https://api.github.com/users", true);
         xhr.onload = (event) => {
-             //console.log(event);
+            // console.log(event);
              event.preventDefault();
-            if (xhr.status == 200 && xhr.status < 300) {
+            if (xhr.status == 200 && xhr.status < 300 ) {
                 // console.log('online');
                 heading.innerText = "You're Online";
                 // imgtag.src = "wifi.png";
@@ -36,6 +36,8 @@ window.onload = () => {
         
     }
     xhr.send();
+   
+    }
     function offline(){
         heading.innerText = "You're Offline";
         // imgtag.src = "offline.png";
@@ -46,8 +48,6 @@ window.onload = () => {
         para.innerText = "Please connect to the internet";
         guide.innerText="// Turn On Your Internet";
         guide.classList.remove('active');
-    }
-   
 }
 
 setInterval(ajax, 500);
