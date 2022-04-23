@@ -9,8 +9,9 @@ window.onload = () => {
     function ajax(){
         var xhr = new XMLHttpRequest();
         xhr.open("GET","https://api.github.com/users", true);
-        xhr.onload = () => {
+        xhr.onload = (event) => {
              //console.log(event);
+             event.preventDefault();
             if (xhr.status == 200 && xhr.status < 300) {
                 // console.log('online');
                 heading.innerText = "You're Online";
@@ -48,6 +49,9 @@ window.onload = () => {
     }
    
 }
-setInterval(ajax, 5);
+
+setInterval(ajax, 500);
+console.clear();
+
 
 }
